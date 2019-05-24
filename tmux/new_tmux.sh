@@ -1,1 +1,1 @@
-tmux new -s nvthangmylove
+tmux new -s vim
