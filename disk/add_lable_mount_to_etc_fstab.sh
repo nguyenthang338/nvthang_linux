@@ -1,0 +1,1 @@
+blkid -L label

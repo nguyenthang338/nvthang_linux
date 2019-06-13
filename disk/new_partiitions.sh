@@ -1,0 +1,1 @@
+fdisk /dev/xvdc
