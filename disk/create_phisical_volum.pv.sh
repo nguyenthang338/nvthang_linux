@@ -1,1 +1,0 @@
-pvcreate /dev/xvdc1
