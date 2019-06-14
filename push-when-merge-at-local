@@ -1,0 +1,2 @@
+#git push origin HEAD:<name-of-remote-branch>
+ git push origin HEAD:ansible
