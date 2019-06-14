@@ -1,0 +1,1 @@
+/opt/zimbra/libexec/zmqstat
