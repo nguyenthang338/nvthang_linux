@@ -1,16 +1,10 @@
 ---
-# tasks file for nvthang.install
-- name: Install list package
-  apt: pkg={{ item }} state=absent
-  with_item:
-    - python
-    - python-software-properties
-    - oracle-java8-installet
-    - oracle-java8-set-default
-    - libjna-java
+- name: Install list package for ubuntu
+  include_tasks: setup-ubuntu.yml
+  when: ansible_os_family == 'Debian'
 
-- name: Disable (enable) and stop(start) the postfix service  service:
-    enableed: no
-    name: postfix
-    state: stopped
-# state= absent, latest, fixed , build-dep, present
+
+- name: Install list package for Centos
+  include_tasks: setup-centos.yml
+  when: ansible_os_family == 'CentOS'
+
